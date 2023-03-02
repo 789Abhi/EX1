@@ -1,4 +1,12 @@
 [[package]]
+name = "ab"
+version = "1.0"
+description = "A/B Testing Framework for Python with optional Multi-armed bandit implementation"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "aiohttp"
 version = "3.8.3"
 description = "Async http client/server framework (asyncio)"
@@ -588,9 +596,10 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "3695199ee42bfd21f917605a29e75ad5281c2168681425c659c1d6242a237a90"
+content-hash = "9aae547a530facf360526096e309ec6fcf1f20f5b16d7550d0dbb475f95e9d0e"
 
 [metadata.files]
+ab = []
 aiohttp = []
 aiosignal = []
 argon2-cffi = []
