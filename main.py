@@ -953,3 +953,146 @@
 
 # for i in fib(9):
 # 	print(i,end=" ")
+
+
+# calc=(lambda x:"even number"if x%2==0 else "odd number")
+# print(calc(332))
+# def cube(n):
+# 	return n*n*n
+
+# x=input("Enter a number :")
+# print(cube(int(x)))
+
+
+# list=[1,2,3,-1,-2,-8,10]
+# x=sorted(list,key=lambda y:y)
+# print([i for i in x if i%4==0])
+
+# l=[1,2,3,-2,-4,10,-3]
+# x = sorted(l, key=lambda y: y if y % 2 != 0 else float('inf'))
+# print([i for i in x if i % 2 == 0])
+# def f():
+# 	global s
+# 	s+='great'
+# 	print(s)
+	
+# s='python is '
+# f()
+# def adder(x):
+# 	def sup(y):
+# 		return x+y
+# 	return sup
+
+# add_15=adder(15)
+# # print(add_15(10))
+# def mca(a):
+# 	def kk(y):
+# 		return a+y
+# 	return kk
+
+# abhi=mca(2022)
+# print(abhi(2000))
+
+
+# Python program to illustrate
+# nested functions
+# def outerFunction(text):
+
+# 	def innerFunction():
+# 		h1='abhi'
+# 		print(h1)
+
+# 	innerFunction()
+
+# list="ABHISHEK"
+# print((list))
+# outerFunction(list)
+
+# import time
+# import math
+# def calculate_time(func):
+# 	def inner1(*args,**kwagrs):
+# 		begin=time.time()
+
+# 		func(*args,**kwagrs)
+# 		end=time.time()
+# 		print(end-begin)
+# 	return inner1
+
+
+# @calculate_time
+# def factorial(num):
+# 	time.sleep(2)
+# 	print(math.factorial(num))
+
+# factorial(5)
+# import math
+# import time
+
+# def calc_time(func):
+# 	def inner1(*args,**kwargs):
+# 	 begin=time.time()
+
+# 	 func(*args,**kwargs)
+# 	 end=time.time()
+# 	 print(func.__name__,end-begin)
+# 	return inner1
+	
+# @calc_time
+# def factorial(num):
+# 	time.sleep(2)
+# 	print(math.factorial(num))
+# factorial(10)
+
+
+
+
+# import time
+# import math
+# def fun(func):
+#  def inner1(*args,**kwargs):
+# 	 begin=time.time()
+# 	 func(*args,**kwargs)
+# 	 end=time.time()
+# 	 print(f"begin @{begin} end @ {end} and {end-begin}")
+#  return inner1
+
+
+# @fun
+# def factorial(num):
+# time.sleep(2)
+# print(math.factorial(num))
+# factorial(10)
+
+
+# import math
+# def factorial(num):
+# 	print(math.factorial(num))
+# factorial(2)
+
+# memory={}
+# def mem(func):
+# 	def inner1(num):
+# 		if num not in memory:
+# 			memory[num]=func(num)
+# 		else:
+# 		  pass	
+# 		return memory[num]
+
+# 	return inner1
+
+
+# @mem
+# def fact(num):
+# 	if num==1:
+# 		return 1
+# 	else:
+# 		return num*fact(num-1)
+# print(fact(10))
+
+def fact(num):
+	if num==1:
+		return 1
+	else:
+		return num*fact(num-1)
+
